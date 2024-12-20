@@ -1,0 +1,14 @@
+server:
+  host: "127.0.0.1"
+  port: 5001
+  path: "/dumptest"
+  max_connections: 100
+
+security:
+  enable_tls: true
+  certificate: "/path/to/cert.pem"
+  private_key: "/path/to/key.pem"
+
+logging:
+  level: "info"
+  log_file: "/var/log/server.log"

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{d346be52-3990-45c4-b62b-b4a53e6ed18d}</ProjectGuid>
+    <RootNamespace>chrControllerGUI</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>F:\Pycode\sqllite\sqlite-amalgamation-3460100-x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>F:\Pycode\sqllite\sqlite-amalgamation-3460100-x86;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>F:\Pycode\sqllite\sqlite-amalgamation-3460100-x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>F:\Pycode\sqllite\sqlite-amalgamation-3460100-x86;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>F:\Pycode\sqllite\sqlite-dll-win-x64-3460100-x64;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\Pycode\sqllite\sqlite-dll-win-x64-3460100-x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>F:\Pycode\sqllite\sqlite-dll-win-x64-3460100-x64;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\Pycode\sqllite\sqlite-dll-win-x64-3460100-x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>F:\Pycode\_desktopAPP\yaml-cpp\include;F:\Pycode\_desktopAPP\googletest\build\bin\Release;F:\Pycode\_desktopAPP\zlib-1.3.1.tar\zlib-1.3.1\;F:\Pycode\_desktopAPP\googletest\googletest\include\;F:\Pycode\_desktopAPP\boost_1_86_0\;F:\Pycode\_desktopAPP\nlohmannjson;F:\Pycode\sqllite\sqlite-amalgamation-3460100-x86;$(WXWIN)/include/msvc;$(WXWIN)/include;$(WXWIN)/include/msvc;$(WXWIN)/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>F:\Pycode\_desktopAPP\yaml-cpp\build32\Debug;F:\Pycode\_desktopAPP\googletest\build\bin\Release;F:\Pycode\_desktopAPP\zlib-1.3.1.tar\zlib-1.3.1\build\Release;F:\Pycode\_desktopAPP\zlib\build\Release;F:\Pycode\_desktopAPP\googletest\build\lib\Release;F:\Pycode\sqllite\sqlite-amalgamation-3460100-x86;$(WXWIN)/lib/vc_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>yaml-cppd.lib;zlibstatic.lib;zlib.lib;gtest.lib;gtest_main.lib;sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>F:\Pycode\_desktopAPP\yaml-cpp\include;F:\Pycode\_desktopAPP\googletest\build\bin\Release;F:\Pycode\_desktopAPP\zlib-1.3.1.tar\zlib-1.3.1\;F:\Pycode\_desktopAPP\googletest\googletest\include\;F:\Pycode\_desktopAPP\boost_1_86_0\;F:\Pycode\_desktopAPP\nlohmannjson;F:\Pycode\sqllite\sqlite-amalgamation-3460100-x86;$(WXWIN)/include/msvc;$(WXWIN)/include;</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>F:\Pycode\_desktopAPP\yaml-cpp\build32\Release;F:\Pycode\_desktopAPP\googletest\build\bin\Release;F:\Pycode\_desktopAPP\zlib-1.3.1.tar\zlib-1.3.1\build\Release;F:\Pycode\_desktopAPP\zlib\build\Release;F:\Pycode\_desktopAPP\googletest\build\lib\Release;F:\Pycode\sqllite\sqlite-amalgamation-3460100-x86;$(WXWIN)/lib/vc_lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>yaml-cpp.lib;zlibstatic.lib;zlib.lib;gtest.lib;gtest_main.lib;sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>F:\Pycode\_desktopAPP\zlib-1.3.1.tar\zlib-1.3.1\;F:\Pycode\_desktopAPP\googletest\googletest\include\;F:\Pycode\_desktopAPP\boost_1_86_0;F:\Pycode\_desktopAPP\nlohmannjson;F:\Pycode\sqllite\sqlite-dll-win-x64-3460100-x64;$(WXWIN)/include/msvc;$(WXWIN)/include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>F:\Pycode\_desktopAPP\yaml-cpp\build\Debug;F:\Pycode\_desktopAPP\zlib-1.3.1.tar\zlib-1.3.1\build\Release;F:\Pycode\_desktopAPP\googletest\build\lib\Release;F:\Pycode\_desktopAPP\yaml-cpp\build\Debug\yaml-cppd.lib;F:\Pycode\_desktopAPP\zlib\build\Release;F:\Pycode\sqllite\sqlite-dll-win-x64-3460100-x64;$(WXWIN)/lib/vc_x64_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>yaml-cppd.lib;zlibstatic.lib;zlib.lib;gtest.lib;gtest_main.lib;sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>F:\Pycode\_desktopAPP\zlib-1.3.1.tar\zlib-1.3.1\;F:\Pycode\_desktopAPP\googletest\googletest\include\;F:\Pycode\_desktopAPP\boost_1_86_0;F:\Pycode\_desktopAPP\nlohmannjson;F:\Pycode\sqllite\sqlite-dll-win-x64-3460100-x64;$(WXWIN)/include/msvc;$(WXWIN)/include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>F:\Pycode\_desktopAPP\yaml-cpp\build\Release;F:\Pycode\_desktopAPP\zlib-1.3.1.tar\zlib-1.3.1\build\Release;F:\Pycode\_desktopAPP\googletest\build\lib\Release;F:\Pycode\_desktopAPP\zlib\build\Release;F:\Pycode\sqllite\sqlite-dll-win-x64-3460100-x64;$(WXWIN)/lib/vc_x64_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>yaml-cpp.lib;zlibstatic.lib;zlib.lib;gtest.lib;gtest_main.lib;sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ButtonCellRenderer.h" />
+    <ClInclude Include="button_renderers.h" />
+    <ClInclude Include="Database.h" />
+    <ClInclude Include="DataGridItem.h" />
+    <ClInclude Include="DeleteButtonEditor.h" />
+    <ClInclude Include="F:\Pycode\_desktopAPP\nlohmannjson\json.hpp" />
+    <ClInclude Include="Folder.h" />
+    <ClInclude Include="GroupCellRenderer.h" />
+    <ClInclude Include="GroupInfo.h" />
+    <ClInclude Include="GroupManagementDialog.h" />
+    <ClInclude Include="GroupSchedulerDialog.h" />
+    <ClInclude Include="ImageButtonRenderer.h" />
+    <ClInclude Include="MyFrame.h" />
+    <ClInclude Include="MyGridCellAutoWrapStringRenderer.h" />
+    <ClInclude Include="Schema.h" />
+    <ClInclude Include="ServerCommunications.h" />
+    <ClInclude Include="ServerConfig.h" />
+    <ClInclude Include="URLComponents.h" />
+    <ClInclude Include="URLManager.h" />
+    <ClInclude Include="UrlParser.h" />
+    <ClInclude Include="UUID.h" />
+    <ClInclude Include="WrappedTextCellRenderer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="ButtonCellRenderer.cpp" />
+    <ClCompile Include="Database.cpp" />
+    <ClCompile Include="Folder.cpp" />
+    <ClCompile Include="FolderTest.cpp" />
+    <ClCompile Include="GroupCellRenderer.cpp" />
+    <ClCompile Include="GroupInfo.cpp" />
+    <ClCompile Include="GroupManagementDialog.cpp" />
+    <ClCompile Include="GroupSchedulerDialog.cpp" />
+    <ClCompile Include="MyFrame.cpp" />
+    <ClCompile Include="MyGridCellAutoWrapStringRenderer.cpp" />
+    <ClCompile Include="Schema.cpp" />
+    <ClCompile Include="ServerCommunications.cpp" />
+    <ClCompile Include="ServerConfig.cpp" />
+    <ClCompile Include="URLManager.cpp" />
+    <ClCompile Include="UrlParser.cpp" />
+    <ClCompile Include="UUID.cpp" />
+    <ClCompile Include="WrappedTextCellRenderer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="config.json" />
+    <None Include="config.yaml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
